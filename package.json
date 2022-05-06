@@ -16,7 +16,8 @@
     "lint:fix:ng": "ng lint --fix",
     "lint:fix:css": "stylelint src/**/*.css --fix",
     "lint:fix:md": "markdownlint-cli2-fix README.md \"**/*.md\" \".github/**/*.md\" \"#node_modules\"",
-    "lint:fix:prettier": "prettier --write ."
+    "lint:fix:prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -42,12 +43,15 @@
     "@angular-eslint/template-parser": "13.2.1",
     "@angular/cli": "~13.3.5",
     "@angular/compiler-cli": "~13.3.0",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
