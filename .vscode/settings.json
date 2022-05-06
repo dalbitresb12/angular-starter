@@ -1,0 +1,4 @@
+{
+  "eslint.packageManager": "npm",
+  "eslint.validate": ["javascript", "typescript", "html"]
+}
