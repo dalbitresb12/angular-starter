@@ -50,6 +50,7 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.4",
@@ -72,5 +73,10 @@
     "*.css": "stylelint --fix",
     "*.{js,ts,css,md,json,yml}": "prettier --write",
     "*.md": "markdownlint-cli2-fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
