@@ -82,7 +82,8 @@
       "excludedFiles": ["src/*"],
       "extends": ["eslint:recommended", "prettier"],
       "env": {
-        "node": true
+        "node": true,
+        "es6": true
       },
       "rules": {
         "no-var": "error",
