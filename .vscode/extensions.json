@@ -4,6 +4,8 @@
     "angular.ng-template",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "DavidAnson.vscode-markdownlint",
+    "EditorConfig.EditorConfig"
   ]
 }
