@@ -10,13 +10,13 @@
     "test:watch": "ng test --watch",
     "e2e": "ng e2e",
     "lint": "concurrently -s -n lint: 'npm:lint:*(!fix)'",
-    "lint:ng": "ng lint",
-    "lint:css": "stylelint src/**/*.css",
+    "lint:eslint": "eslint --cache --ext .js,.ts,.html .",
+    "lint:css": "stylelint --cache src/**/*.css",
     "lint:md": "markdownlint-cli2 README.md \"**/*.md\" \".github/**/*.md\" \"#node_modules\"",
     "lint:prettier": "prettier --check .",
     "lint:fix": "concurrently -s -n lint:fix: 'npm:lint:fix:*'",
-    "lint:fix:ng": "ng lint --fix",
-    "lint:fix:css": "stylelint src/**/*.css --fix",
+    "lint:fix:eslint": "eslint --cache --ext .js,.ts,.html --fix .",
+    "lint:fix:css": "stylelint --cache src/**/*.css --fix",
     "lint:fix:md": "markdownlint-cli2-fix README.md \"**/*.md\" \".github/**/*.md\" \"#node_modules\"",
     "lint:fix:prettier": "prettier --write .",
     "prepare": "husky install"
@@ -71,7 +71,7 @@
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
+    "*.css": "stylelint --cache --fix",
     "*.{js,ts,css,md,json,yml}": "prettier --write",
     "*.md": "markdownlint-cli2-fix"
   },
